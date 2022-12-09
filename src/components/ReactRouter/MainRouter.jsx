@@ -4,10 +4,24 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 const MainRouter = () => {
   return (
     <div>
+        <ul>
+            <li>
+              <Link to="/">Home</Link>  
+              </li>
+              <li>
+              <Link to="about">About</Link>  
+              </li>
+              <li>
+              <Link to="services">Services</Link>  
+              </li>
+              <li>
+              <Link to="contact">Contact</Link>  
+              </li>
+        </ul> 
         <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
